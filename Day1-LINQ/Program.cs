@@ -63,7 +63,13 @@ namespace _100DaysOfCode
                     LastName = "Code",
                     Age = 19
                 },
-                null
+                new User
+                {
+                    FirstName = "Test",
+                    LastName = "User",
+                    Age = 65,
+                    Email = "testuser@linq.com"
+                }
             };
 
             /*
@@ -79,17 +85,15 @@ namespace _100DaysOfCode
              *  {
              *      Console.WriteLine(x);
              *  });
+             *  userList.Where(x => x != null).GroupBy(x => x.Age).ToList().ForEach(x =>
+             *  {
+             *      Console.Write(x.Key + " > ");
+             *  x.ToList().ForEach(y =>
+             *  {
+             *      Console.WriteLine(y.FirstName + " " + y.LastName + " " + y.Email);
+             *      });
+             *  });
              */
-            userList.Where(x => x != null).GroupBy(x => x.Age).ToList().ForEach(x =>
-            {
-                Console.Write(x.Key + " > " );
-
-                x.ToList().ForEach(y =>
-                {
-                    Console.WriteLine(y.FirstName);
-                });
-            });
-
         }
     }
 }

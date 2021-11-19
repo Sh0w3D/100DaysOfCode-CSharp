@@ -1,9 +1,9 @@
 ﻿/*
  * Created by Kamil Oberaj on 18.11.2022
  */
+
 using System;
 using System.Collections.Generic;
-
 
 namespace _100DaysOfCode.Day1LINQ
 {
@@ -15,5 +15,6 @@ namespace _100DaysOfCode.Day1LINQ
 
         public int Age { get; set; }
 
+        public string Email { get; set; }
     }
 }
