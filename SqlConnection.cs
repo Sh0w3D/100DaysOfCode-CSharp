@@ -20,7 +20,7 @@ namespace NET
             try
             {
                 connection.ConnectionString = $"server = <your host>; User id = " +
-                    $"{username}; Persist Security Info = True; database = <your dbname> +
+                    $"{username}; Persist Security Info = True; database = <your dbname> " +
                     $"Password = {password}";
                 connection.Open();
                 Console.WriteLine("Connected succesfully!");
